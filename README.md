@@ -1,6 +1,10 @@
 # ticket_app
 # React Support Ticket System with Firebase Authentication & Firestore
 
+## Live Demo
+
+👉 [Click here to view the live app](https://ticket--app.web.app/)
+
 A role-based support ticket management web application built with React and Firebase.  
 Supports two user roles with different permissions: Customers and Support Agents.
 
@@ -87,3 +91,4 @@ For issues or feature requests, please open an issue or contact the maintainer.
 - **Agent:** agent@support.com / agent123
 
 ---
+
