@@ -1,94 +1,84 @@
-# ticket_app
-# React Support Ticket System with Firebase Authentication & Firestore
+# 🎟️ Ticket App – Role-Based Support Ticket System
 
-## Live Demo
+**Live Demo:** 👉 [ticket--app.web.app](https://ticket--app.web.app/)  
+Built with **React**, **Firebase Auth**, and **Firestore**
 
-👉 [Click here to view the live app](https://ticket--app.web.app/)
-
-A role-based support ticket management web application built with React and Firebase.  
-Supports two user roles with different permissions: Customers and Support Agents.
+A support ticket management platform designed with two user roles — **Customers** and **Support Agents** — with secure login, dynamic ticket form, and role-based navigation.
 
 ---
 
-## Features
+## ✨ Features
 
-### User Roles
-- **Customer**
-  - Can raise new tickets via a modal form.
-  - Can view and delete only their own tickets.
-- **Support Agent**
-  - Can view all tickets in the system.
-  - Can update ticket status and assign tickets to agents.
-  - Cannot delete tickets.
+### 🔐 Authentication
+- Firebase Authentication with demo credentials:
+  - **Customer:** `customer@support.com` / `customer123`
+  - **Agent:** `agent@support.com` / `agent123`
 
-### Authentication
-- Firebase Authentication integration for secure login.
-- Two predefined users for demo/testing:
-  - Customer: `customer@support.com` / `customer123`
-  - Agent: `agent@support.com` / `agent123`
+### 👥 Role-Based Access
+- **Customer:**
+  - Raise, view, and delete **their own** tickets.
+- **Support Agent:**
+  - View **all** tickets.
+  - Update status and assign agents.
+  - Access static **Report** and **Team** pages.
 
-### Ticket Management
-- **Support Dashboard** shows tickets with columns:  
-  Ticket ID | Title | Description | Priority | Status | Created By | Assigned To | Actions
-- Actions include:
-  - **View** ticket details
-  - **Edit** ticket status/assignment (agent only)
-  - **Delete** ticket (customer only for their own tickets)
+### 📝 Ticket Form (12+ fields)
+- Fields include: Title, Description, Priority, Category, Date, Email, Phone, Attachment, and more.
+- Includes validation and file upload support.
 
-### Ticket Submission Form
-- Over 12 input fields including text, dropdown, date picker, checkbox, radio buttons, and file upload.
-- Fields include: Title, Description, Priority, Category, Attachment, Contact Email, Phone, and more.
-- Includes robust form validations.
-- Tickets saved securely in Firestore.
+### 🗂️ Ticket Dashboard
+- Tabular ticket view with columns:  
+  `ID`, `Title`, `Priority`, `Status`, `Created By`, `Assigned To`, `Actions`
+- Role-specific actions:
+  - **Customer:** Delete their own tickets
+  - **Agent:** Assign or update ticket status
 
-### Role-Based Access & Navigation
-- Sidebar navigation adapts by role:
-  - **Tickets** page for managing tickets.
-  - **Static Report** page (new feature for agents).
-  - **Team Page** (new feature accessible to agents).
-  - **Logout** button to sign out.
-
-### Deployment
-- Easy to deploy on Firebase Hosting, Vercel, or Netlify.
-- Site URL can be submitted post deployment.
+### 🔄 Navigation & UI
+- Sidebar adapts by role
+- Mobile-friendly layout
+- Styled with **Tailwind CSS** and `shadcn/ui` components
 
 ---
 
-## Technologies Used
-- React (with Hooks)
-- Firebase Authentication
-- Firebase Firestore (Realtime Database)
-- React Router DOM
-- React Context API for state management
-- Tailwind CSS , shadcn/ui Styled Components 
+## 🛠 Tech Stack
 
-## Usage
+- **Frontend:** React (Hooks, Context API), Tailwind CSS
+- **Auth & DB:** Firebase Authentication, Firestore
+- **Routing:** React Router DOM
+- **UI Components:** shadcn/ui, custom modals & tables
 
-- Login using the provided credentials.
+---
 
-- Customers can raise new tickets via the modal form and manage their own tickets.
+## 🚀 Deployment
 
-- Agents can view all tickets, update status, assign tickets, and access the new Static Report and Team pages via the sidebar.
+Easily deployable via Firebase Hosting, Vercel, or Netlify.
 
-- Use the logout button to sign out.
+---
 
-## Future Improvements
+## 💡 Future Enhancements
 
-- Add email notifications on ticket updates.
+- ✅ Email notifications on ticket status updates  
+- ✅ File preview for attachments  
+- ✅ Enhanced team page with agent profiles & internal chat  
 
-- Enable file preview for attachments.
+---
 
-- Enhance team page with agent profiles and chat.
+## 📬 Contact
 
-## Contact
+Have suggestions or feedback?  
+Open an issue or connect on [LinkedIn](https://www.linkedin.com/in/mohita-chourase/)
 
-For issues or feature requests, please open an issue or contact the maintainer.
+---
 
-## Demo Credentials
+## 🧪 Quick Demo Access
 
-- **Customer:** customer@support.com / customer123
+- **Customer Login**  
+  Email: `customer@support.com`  
+  Password: `customer123`
 
-- **Agent:** agent@support.com / agent123
+- **Agent Login**  
+  Email: `agent@support.com`  
+  Password: `agent123`
 
 ---
 
